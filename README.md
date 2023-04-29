@@ -1,11 +1,18 @@
 "Build and Deploy" is a pipeline that automates the build and deployment process of a Docker image to a Kubernetes cluster on Google Cloud Platform.
 
 GCP_SA_KEY: The service account key for Google Cloud Platform, used for authentication.
+
 IMAGE_NAME: The name of the Docker image to build and deploy.
+
 IMAGE_TAG: The tag for the Docker image, set to the commit SHA of the push event.
+
 NAMESPACE: The Kubernetes namespace to deploy the application to.
+
 DOCKER_REGISTRY: The Docker registry to push the built image to.
+
 PROJECT_ID: The ID of the Google Cloud Platform project to deploy the application to.
+
+Steps of my pipline
 
 1.Checkout: This step checks out the source code from the repository.
 
